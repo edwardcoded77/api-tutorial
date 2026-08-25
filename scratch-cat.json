@@ -1,0 +1,16 @@
+[
+    {"id":"bid",
+    "url":"https://s3.us-west-2.amazonaws.com/cdn2.thecatapi.com/images/bid.jpg",
+    "width":400,
+    "height":305
+},
+{"id":"drp",
+    "url":"https://s3.us-west-2.amazonaws.com/cdn2.thecatapi.com/images/drp.jpg",
+    "width":499,
+    "height":665
+}
+]
+
+
+
+

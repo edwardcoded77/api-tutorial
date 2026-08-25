@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html theme="light">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+        <link rel="stylesheet" href="css/container.css">
+        <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+       <main class="container">
+         <div class="card">
+            <h1> Hello World!</h1>
+         </div>
+       <section class="card">
+         <h2>Step 1 — The URL is the request</h2>
+          <div class="img-id">
+            <img src="images/raw-json.png" alt="The dog.ceo response as one unbroken line of raw text">
+            <img src="images/pretty-json.png" alt="The same response laid out on separate lines by the browser's JSON viewer">
+           </div>
+          <p>I tested the Dog API by requesting a random dog image, then formatted the returned JSON to make it easier to read.</p>
+         <pre><code>{
+          "message": "https://images.dog.ceo/breeds/hound-afghan/n02088094_2062.jpg",
+          "status": "success"
+   }</code></pre>
+              <p>Here are some more dogs</p>
+             <img class="img-id2" src="https://images.dog.ceo/breeds/hound-afghan/n02088094_2062.jpg">
+             <img class="img-id2" src="https://images.dog.ceo/breeds/hound-ibizan/n02091244_25.jpg">
+        </section>
+   </main>
+    </body>
+</html>
