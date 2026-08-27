@@ -91,18 +91,52 @@
     </section>
       
     <section class="card">
-        <h2>Step 4 - Process the data</h2>
-        <p>I accessed the message property to get the dog image URL from the API response.</p>
-    <pre><code>{.then(data => {
-    const dogImage = data.message;
-    console.log(dogImage);
-});}</code></pre>
+        <h2>Step 4 - Saving an API Response</h2>
+        div class="api-03">
+           <img src="/images/response.png" alt="Cat API response ">
+        </div>
+        <p>I learned how to save the response from Postman as a JSON file and use it in my JavaScript code. My<code>pet-cats.json</code> file contains
+        the actual cat data returned by the API, which I imported into
+        <code>description.js</code>.</p>
+    <pre><code>{{
+        "length": "Medium",
+        "origin": "United States and Canada",
+        "image_link": "https://api-ninjas.com/images/cats/american_bobtail.jpg",
+        "family_friendly": 4,
+        "shedding": 4,
+        "general_health": 4,
+        "playfulness": 4,
+        "meowing": 3,
+        "children_friendly": 4,
+        "stranger_friendly": 4,
+        "grooming": 3,
+        "intelligence": 4,
+        "other_pets_friendly": 4,
+        "min_weight": 8.0,
+        "max_weight": 13.0,
+        "min_life_expectancy": 11.0,
+        "max_life_expectancy": 15.0,
+        "name": "American Bobtail"
+    },}</code></pre>
     </section>  
+    
     <section class="card">
-        <h2>Step 5 - Use the data</h2>
-        <p>I used the image URL from the API response to display a dog on my webpage.</p>
-        <pre><code>let dogImage = document.querySelector("#dog-image"); dogImage.src = data.message;</code></pre>
-        <!-- <img id="dog-image" src="https://images.dog.ceo/breeds/hound-ibizan/n02091244_25.jpg" alt="Dog image from the Dog API"></code></pre> -->
+        <h2>Step 5 - Using JSON in JavaScript</h2>
+        <p>I learned that I can access individual records from a JSON array using an index. 
+            I used <code>CatData[0].name</code> to get the first cat's name and <code>CatData[0].shedding</code> to get its shedding
+        level.</p>
+        <pre><code>{import CatData from "../pet-cats.json";
+console.log("Hello World!");
+
+// The first cat
+console.log("The " + CatData[0].name + "'s  shredding level is " + CatData[0].shedding + ".");
+
+// The second cat 
+console.log("The " + CatData[1].name + "'s  shredding level is " + CatData[0].shedding + ".");
+
+// The third cat 
+console.log("The " + CatData[2].name + "'s  shredding level is " + CatData[0].shedding + ".");}</code></pre>
+        
     </section>
    </main>
     </body>
