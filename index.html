@@ -5,12 +5,13 @@
         <link rel="stylesheet" href="css/container.css">
         <link rel="stylesheet" href="css/card.css">
         <link rel="stylesheet" href="css/style.css">
+      
 
     </head>
     <body>
        <main class="container">
          <div class="card">
-            <h1> Hello World!</h1>
+            <h1> All About APIs!</h1>
          </div>
        <section class="card">
          <h2>Step 1 — The URL is the request</h2>
@@ -23,10 +24,122 @@
           "message": "https://images.dog.ceo/breeds/hound-afghan/n02088094_2062.jpg",
           "status": "success"
    }</code></pre>
-              <p>Here are some more dogs</p>
+              <p id="tagline-1">Here are some more dogs</p>
              <img class="img-id2" src="https://images.dog.ceo/breeds/hound-afghan/n02088094_2062.jpg">
              <img class="img-id2" src="https://images.dog.ceo/breeds/hound-ibizan/n02091244_25.jpg">
         </section>
+   
+    <section class="card">
+        <h2>Step 2 - Fetch the data</h2>
+        <div class="img-cat01">
+            <img src="images/Screenshot-Postman01.png" alt="The cat API's">
+        </div>
+        <p>I used Postman to send a request to the Cat API and inspect the JSON response.</p>
+        <pre><code>{
+    [
+    {
+        "length": "12 to 16 inches",
+        "origin": "Southeast Asia",
+        "image_link": "https://api-ninjas.com/images/cats/abyssinian.jpg",
+        "family_friendly": 3,
+        "shedding": 3,
+        "general_health": 2,
+        "playfulness": 5,
+        "children_friendly": 5,
+        "grooming": 3,
+        "intelligence": 5,
+        "other_pets_friendly": 5,
+        "min_weight": 6.0,
+        "max_weight": 10.0,
+        "min_life_expectancy": 9.0,
+        "max_life_expectancy": 15.0,
+        "name": "Abyssinian"
+    },
+    {
+        "length": "Medium",
+        "origin": "Greece",
+        "image_link": "https://api-ninjas.com/images/cats/aegean.jpg",
+        "family_friendly": 5,
+        "shedding": 3,
+        "general_health": 4,
+        "playfulness": 4,
+        "meowing": 4,
+        "children_friendly": 5,
+        "stranger_friendly": 4,
+        "grooming": 4,
+        "intelligence": 4,
+        "other_pets_friendly": 3,
+        "min_weight": 7.0,
+        "max_weight": 10.0,
+        "min_life_expectancy": 9.0,
+        "max_life_expectancy": 10.0,
+        "name": "Aegean"
+    }
+}</code></pre>
+    </section>
+    
+    <section class="card">
+        <h2>Step 3 - DNS Lookup </h2>
+        div class="img-cat01">
+            <img src="images/dns.png" alt="The cat API's">
+        </div>
+        <p>I used the DNS Lookup API to look up DNS records for a domain.The API response shows the record type and the value returned for each record.</p>
+        <pre><code>{[
+    {
+        "record_type": "A",
+        "value": "Available for premium subscribers only."
+    },
+    {
+        "record_type": "AAAA",
+        "value": "Available for premium subscribers only."
+    },
+    {
+        "record_type": "CNAME",
+        "value": "Available for premium subscribers only."
+    },
+    {
+        "record_type": "MX",
+        "value": "Available for premium subscribers only."
+    },
+    {
+        "record_type": "NS",
+        "value": "elliott.ns.cloudflare.com."
+    },
+    {
+        "record_type": "NS",
+        "value": "hera.ns.cloudflare.com."
+    },
+    {
+        "record_type": "SOA",
+        "mname": "elliott.ns.cloudflare.com.",
+        "rname": "dns.cloudflare.com.",
+        "serial": 2411783310,
+        "refresh": 10000,
+        "retry": 2400,
+        "expire": 604800,
+        "ttl": 1800
+    },
+    {
+        "record_type": "TXT",
+        "value": "Available for premium subscribers only."
+    }
+]}</code></pre>
+    </section>
+      
+    <section class="card">
+        <h2>Step 4 - Process the data</h2>
+        <p>I accessed the message property to get the dog image URL from the API response.</p>
+    <pre><code>{.then(data => {
+    const dogImage = data.message;
+    console.log(dogImage);
+});}</code></pre>
+    </section>  
+    <section class="card">
+        <h2>Step 5 - Use the data</h2>
+        <p>I used the image URL from the API response to display a dog on my webpage.</p>
+        <pre><code>let dogImage = document.querySelector("#dog-image"); dogImage.src = data.message;</code></pre>
+        <!-- <img id="dog-image" src="https://images.dog.ceo/breeds/hound-ibizan/n02091244_25.jpg" alt="Dog image from the Dog API"></code></pre> -->
+    </section>
    </main>
     </body>
 </html>

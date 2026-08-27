@@ -1,14 +1,24 @@
-.img-id img {
+.img-id {
   display: block;
-  width: 900px;
-  margin-bottom: 20px;
-  height: 150px;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 
-.img-id2{
+.img-id2 {
   display: block;
-  width: 700px;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
   margin-bottom: 20px;
-  height: 900px;
+}
+
+#tagline-1 {
+   text-align: center;
+} 
+
+.img-cat01 {
+  width: 800px;
 }
