@@ -1,4 +1,4 @@
-import CatData from "../pet-cats.json";
+import CatData from "../my-cats.json";
 console.log("Hello World!");
 
 // The first cat
@@ -8,4 +8,4 @@ console.log("The " + CatData[0].name + "'s  shredding level is " + CatData[0].sh
 console.log("The " + CatData[1].name + "'s  shredding level is " + CatData[0].shedding + ".");
 
 // The third cat 
-console.log("The " + CatData[2].name + "'s  shredding level is " + CatData[0].shedding + ".");
+console.log("The " + CatData[2].name + "'s  shredding level is " + petCat[0].shedding + ".");
