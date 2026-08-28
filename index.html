@@ -120,23 +120,81 @@
     },}</code></pre>
     </section>  
     
-    <section class="card">
-        <h2>Step 5 - Using JSON in JavaScript</h2>
-        <p>I learned that I can access individual records from a JSON array using an index. 
-            I used <code>CatData[0].name</code> to get the first cat's name and <code>CatData[0].shedding</code> to get its shedding
-        level.</p>
-        <pre><code>{import CatData from "../pet-cats.json";
-console.log("Hello World!");
-
-// The first cat
-console.log("The " + CatData[0].name + "'s  shredding level is " + CatData[0].shedding + ".");
-
-// The second cat 
-console.log("The " + CatData[1].name + "'s  shredding level is " + CatData[0].shedding + ".");
-
-// The third cat 
-console.log("The " + CatData[2].name + "'s  shredding level is " + CatData[0].shedding + ".");}</code></pre>
+<section class="card">
+    <h2>Step 5 - Using JSON in JavaScript</h2>
+    <p>I learned that I can access individual records from a JSON array using an index. 
+        I used <code>CatData[0].name</code> to get the first cat's name and <code>CatData[0].shedding</code> to get its shedding
+    level.</p>
+    <pre><code>{import CatData from "../pet-cats.json";
+        console.log("Hello World!");
+        // The first cat
+        console.log("The " + CatData[0].name + "'s  shredding level is " + CatData[0].shedding + ".");
         
+        // The second cat 
+        console.log("The " + CatData[1].name + "'s  shredding level is " + CatData[0].shedding + ".");
+        
+        // The third cat 
+        console.log("The " + CatData[2].name + "'s  shredding level is " + CatData[0].shedding + ".");}
+
+</code></pre>
+
+<section class="card">
+    <h2>Step 6 - Passing JSON Data to a JavaScript Function</h2>
+    <p>I learned how to pass individual objects from a JSON array into a JavaScript function</p>
+    <div class="api-04">
+           <img src="images/api-6.png" alt="Js function">
+        </div>
+    <pre><code>import pets from "../data.json";
+
+        function describe(pet){
+        console.log(pet.name + " comes from " + pet.origin + " and is " + pet.length + " long.");
+        }
+
+        describe(pets[0]);
+        describe(pets[1]);
+        describe(pets[2]);
+        </code></pre>
+   </section>
+    <section class="card">
+        <h2>Step 7 - Understanding undefined &amp; TypeError </h2>
+        <p>I learned what happens when a JavaScript function is called without the argument it expects.When no value is provided,the parameter become undefined.</p>
+        <div>
+            <img src="images/undefined.png" alt="Undefined Error">
+        </div>
+            <pre><code>import pets from "../data.json";
+        function sayLength(size){
+            console.log("This cat measure " + size + ".");
+        }
+
+        function describe(pet){
+            console.log(pet.name + " comes from " + pet.origin + ".");
+        }
+
+        sayLength("12 to 16 inches");
+        sayLength("15 to 20 inches");
+        sayLength("30 to 40 inches");
+
+        describe(pets[0]);
+        describe(pets[1]);
+        describe(pets[2]);
+        describe();
+           </code></pre>
+             </section>
+
+    <section class="card">
+        <h2>Step 8 - Passing Two Parameters </h2>
+        <p>I learned that a JavaScript function can accept more than one parameter. When the function is called, each argument is passed to its matching parameter in the same order.</p>
+        <div>
+            <img src="images/par2.png" alt="Declare two parameters">
+            </div>
+            <pre><code>import pets from "../data.json";
+            function introduce(breed,origin){
+            console.log("The " + breed + " is a cat from " + origin + ".");
+            }
+
+        introduce("Bengal Cats", "USA");
+            </code></pre>
+          </section>
     </section>
    </main>
     </body>

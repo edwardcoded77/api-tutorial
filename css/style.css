@@ -1,11 +1,8 @@
 #my-body {
   background-color: rgb(239, 235, 227);
+ 
 }
 
-
-.card{
-  background-color:rgb(32, 102, 72);
-}
 
 .img-id {
   display: block;
@@ -40,6 +37,10 @@
 
 
 
+/* .card{
+  /* background-color:rgb(16, 46, 34); */
+  /* color: #f5f5f5; }*/
+  
 
 
 
