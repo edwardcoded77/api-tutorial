@@ -67,4 +67,12 @@
 }
 
 
+.day-class{
 
+    display: inline-block;
+    padding: 10px 20px;
+    /* text-decoration: none; */
+    border-radius: 6px;
+    /* background-color: #242121; */
+    color: white;
+}
