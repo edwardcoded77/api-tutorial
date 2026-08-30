@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/container.css">
         <link rel="stylesheet" href="css/card.css">
         <link rel="stylesheet" href="css/style.css">
-      
+        <script src="scripts.js" defer></script>
 
     </head>
     <body id="my-body">
@@ -35,10 +35,8 @@
             <img src="images/404.png" alt="404 Errors ">
             <img src="images/after-key.png" alt="API key ">
         </div>
-        <p>I tried the request without the API key and received a 400 response. After adding the API key to the request header, the API returned a 200 response.</p>
-        <pre><code>{
-    
-}</code></pre>
+        <p>As I worked through the exercises,I tried the request without the API key and received a 400 response. After adding the API key to the request header, the API returned a 200 response.</p>
+        <pre><code></code></pre>
     </section>
     
     <section class="card">
@@ -47,47 +45,49 @@
            <img src="images/Abyssinian.png" alt="Abyssinian cat">
             <img src="images/Bengal.png" alt="Bengal cat">
         </div>
-        <p>I learned that changing a query parameter can change the information returned by the same endpoint. I tested different parameter values in Postman and compared the responses.</p>
-        <pre><code>{[
-    {
-        "length": "12 to 16 inches",
-        "origin": "Southeast Asia",
-        "image_link": "https://api-ninjas.com/images/cats/abyssinian.jpg",
-        "family_friendly": 3,
-        "shedding": 3,
-        "general_health": 2,
-        "playfulness": 5,
-        "children_friendly": 5,
-        "grooming": 3,
-        "intelligence": 5,
-        "other_pets_friendly": 5,
-        "min_weight": 6,
-        "max_weight": 10,
-        "min_life_expectancy": 9,
-        "max_life_expectancy": 15,
-        "name": "Abyssinian"
-    },
-    [{
-        "length": "17 to 22 inches, not including tail",
-        "origin": "USA",
-        "image_link": "https://api-ninjas.com/images/cats/bengal_cats.jpg",
-        "family_friendly": 5,
-        "shedding": 2,
-        "general_health": 3,
-        "playfulness": 5,
-        "meowing": 2,
-        "children_friendly": 5,
-        "stranger_friendly": 3,
-        "grooming": 4,
-        "intelligence": 5,
-        "other_pets_friendly": 5,
-        "min_weight": 8,
-        "max_weight": 17,
-        "min_life_expectancy": 10,
-        "max_life_expectancy": 16,
-        "name": "Bengal Cats"
-    }]
-]}</code></pre>
+        <p>Today, I worked on changing a query parameter can change the information returned by the same endpoint. I tested different parameter values in Postman and compared the responses.</p>
+        <pre ><code>
+            {[
+            {
+                "length": "12 to 16 inches",
+                "origin": "Southeast Asia",
+                "image_link": "https://api-ninjas.com/images/cats/abyssinian.jpg",
+                "family_friendly": 3,
+                "shedding": 3,
+                "general_health": 2,
+                "playfulness": 5,
+                "children_friendly": 5,
+                "grooming": 3,
+                "intelligence": 5,
+                "other_pets_friendly": 5,
+                "min_weight": 6,
+                "max_weight": 10,
+                "min_life_expectancy": 9,
+                "max_life_expectancy": 15,
+                "name": "Abyssinian"
+            },
+            [{
+                "length": "17 to 22 inches, not including tail",
+                "origin": "USA",
+                "image_link": "https://api-ninjas.com/images/cats/bengal_cats.jpg",
+                "family_friendly": 5,
+                "shedding": 2,
+                "general_health": 3,
+                "playfulness": 5,
+                "meowing": 2,
+                "children_friendly": 5,
+                "stranger_friendly": 3,
+                "grooming": 4,
+                "intelligence": 5,
+                "other_pets_friendly": 5,
+                "min_weight": 8,
+                "max_weight": 17,
+                "min_life_expectancy": 10,
+                "max_life_expectancy": 16,
+                "name": "Bengal Cats"
+            }]
+            ]}
+    </code></pre>
     </section>
       
     <section class="card">
@@ -95,7 +95,7 @@
         <div class="api-03">
            <img src="images/response.png" alt="Cat API response ">
         </div>
-        <p>I learned how to save the response from Postman as a JSON file and use it in my JavaScript code. My<code>pet-cats.json</code> file contains
+        <p>Today's practice helped me on  how to save the response from Postman as a JSON file and use it in my JavaScript code. My<code>pet-cats.json</code> file contains
         the actual cat data returned by the API, which I imported into
         <code>description.js</code>.</p>
     <pre><code>{{
@@ -117,7 +117,8 @@
         "min_life_expectancy": 11.0,
         "max_life_expectancy": 15.0,
         "name": "American Bobtail"
-    },}</code></pre>
+        },}
+     </code></pre>
     </section>  
     
 <section class="card">
@@ -137,10 +138,10 @@
         console.log("The " + CatData[2].name + "'s  shredding level is " + CatData[0].shedding + ".");}
 
 </code></pre>
-
+</section>
 <section class="card">
     <h2>Step 6 - Passing JSON Data to a JavaScript Function</h2>
-    <p>I learned how to pass individual objects from a JSON array into a JavaScript function</p>
+    <p>Today, I worked on how to pass individual objects from a JSON array into a JavaScript function</p>
     <div class="api-04">
            <img src="images/api-6.png" alt="Js function">
         </div>
@@ -161,41 +162,74 @@
         <div>
             <img src="images/undefined.png" alt="Undefined Error">
         </div>
-            <pre><code>import pets from "../data.json";
-        function sayLength(size){
-            console.log("This cat measure " + size + ".");
-        }
+          
+    <div class="code-container">
+        <div class="code-toolbar">
+            <button class="copy-btn" type="button">Copy</button>
+            <!-- <button class="expand-btn" type="button">Expand</button> -->
+            <!-- <button class="edit-btn" type="button">Edit</button> -->
+        </div>
+            <pre><code>
+                import pets from "../data.json";
+                function sayLength(size){
+                    console.log("This cat measure " + size + ".");
+                }
 
-        function describe(pet){
-            console.log(pet.name + " comes from " + pet.origin + ".");
-        }
+                function describe(pet){
+                    console.log(pet.name + " comes from " + pet.origin + ".");
+                }
 
-        sayLength("12 to 16 inches");
-        sayLength("15 to 20 inches");
-        sayLength("30 to 40 inches");
+                sayLength("12 to 16 inches");
+                sayLength("15 to 20 inches");
+                sayLength("30 to 40 inches");
 
-        describe(pets[0]);
-        describe(pets[1]);
-        describe(pets[2]);
-        describe();
-           </code></pre>
-             </section>
+                describe(pets[0]);
+                describe(pets[1]);
+                describe(pets[2]);
+                describe();
+             </code></pre>
+          </div>
+        </section>
 
     <section class="card">
         <h2>Step 8 - Passing Two Parameters </h2>
-        <p>I learned that a JavaScript function can accept more than one parameter. When the function is called, each argument is passed to its matching parameter in the same order.</p>
+        <p>Today's practice helped me that a JavaScript function can accept more than one parameter. When the function is called, each argument is passed to its matching parameter in the same order.</p>
         <div>
             <img src="images/par2.png" alt="Declare two parameters">
-            </div>
+        </div>
             <pre><code>import pets from "../data.json";
             function introduce(breed,origin){
             console.log("The " + breed + " is a cat from " + origin + ".");
             }
 
         introduce("Bengal Cats", "USA");
+        </code></pre>
+        </section>
+            
+        <section class="card">
+            <h2>Step 9 - Returning a Value from a Function</h2>
+            <p>I learned that a function can return a value using the <code>return</code>statement.The required value can then be stored in 
+                a variable and used outside the function</p>
+            <div>
+                <img id="card-9"  src="images/class-9.png" alt="return a value from function">
+            </div>
+                <pre><code>import pets from "../data.json";
+
+                function introduce(breed, origin){
+                    console.log("The " + breed + " is a cat from " + origin + ".");
+                }
+
+                function weightLine(pet) {
+                let line = pet.name + " weighs up to ";
+                console.log(line);
+                return line;
+                }
+
+                let sentence = weightLine(pets[1]);
+                console.log("On the card: " + sentence);
             </code></pre>
-          </section>
-    </section>
+        </section>
    </main>
+    <script></script>
     </body>
 </html>

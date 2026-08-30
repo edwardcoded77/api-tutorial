@@ -16,25 +16,9 @@ console.log("On the card: " + sentence);
 
 
 
-/*
 
-let pets = [
-  { name: "Abyssinian", origin: "Ethiopia", length: "12 to 16 inches", playfulness: 5, max_weight: 10 },
-  { name: "Siamese", origin: "Thailand", length: "15 to 20 inches", playfulness: 5, max_weight: 12 },
-  { name: "Maine Coon", origin: "United States", length: "30 to 40 inches", playfulness: 3, max_weight: 25 }
-];
 
-// 1) playScore(pet) returns the playfulness rating doubled — a score out of 10.
 
-function playScore(pet){
-  return  pet.playfulness * 2;
- }
-// 2) scoreLine(score) takes a number and returns a sentence about it,
-//    like "Play score: 6 out of 10."
-function scoreLine(score){
-  return "Play score: " + score + " out of 10.";
-}
-// 3) Print scoreLine(playScore(pets[0]));  */
 
 
 

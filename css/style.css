@@ -1,8 +1,7 @@
 #my-body {
   background-color: rgb(239, 235, 227);
- 
-}
 
+}
 
 .img-id {
   display: block;
@@ -30,17 +29,42 @@
   margin-bottom: 20px;
 }
 
+.code-container {
+    position: relative;
+    background-color: #1e2430;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.code-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 8px;
+    background-color: #171c26;
+}
 
+.code-toolbar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
 
+.code-container pre {
+    margin: 0;
+    padding: 20px;
+    overflow-x: auto;
+}
 
+.code-container code {
+    white-space: pre;
+}
 
-
-
-/* .card{
-  /* background-color:rgb(16, 46, 34); */
-  /* color: #f5f5f5; }*/
-  
+.copy-btn {
+  background-color: #272930;
+}
 
 
 
