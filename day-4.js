@@ -11,5 +11,5 @@ function summarize(pet) {
 // }
 
 button.addEventListener("click", function () {
-  output.textContent = summarize(pets[3]);
+  output.textContent = summarize(pets[0]);
 });
