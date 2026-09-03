@@ -5,17 +5,14 @@
 
 .img-id {
   display: block;
-  width: 500px;
-  max-width: 100%;
-  height: auto;
+  width: 200px;
   margin: 0 auto;
 }
 
 
 .img-id2 {
   display: block;
-  width: 500px;
-  height: 700px;
+  width: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -67,6 +64,13 @@
 }
 
 
+
+.card {
+  background-color: rgb(63, 52, 38);
+  
+}
+
+
 .day-class{
 
     display: inline-block;
@@ -76,6 +80,7 @@
     background-color: #242121;
     color:#0077aa
 }
+
 
 
 .day-class-02 {
@@ -98,4 +103,14 @@
 #day4{
   margin-left: 10px;
   color: white;
+}
+
+#headline-7 {
+  background-color: rgb(63, 52, 38);
+  margin-bottom: 0px;
+}
+
+#Par-7 {
+   background-color: rgb(63, 52, 38);
+   margin-bottom: 0px;
 }

@@ -2,14 +2,20 @@
 let button = document.getElementById("summarize-button");
 let output = document.getElementById("output");
 
+let count = 0;
+
+
 function summarize(pet) {
   return pet.name + " comes from " + pet.origin + " and weighs up to " + pet.max_weight + " pounds.";
+  
 }
 
-// function summarize(pet) {
-//     console.log(pet.name + " is a " + pet.breed);
-// }
-
 button.addEventListener("click", function () {
-  output.textContent = summarize(pets[0]);
-});
+  output.textContent = summarize(pets[count]);
+  count = count + 1;
+
+    if (count >= pets.length) {
+        count = 0;
+    }
+
+ });

@@ -1,8 +1,10 @@
 import pets from "../data.json";
+console.log(pets.length);
 
 function summarize(pet) {
   return pet.name + " comes from " + pet.origin + ".";
 }
+
 
 function weightLine(pet) {
   let line = pet.name + " weighs up to ";
